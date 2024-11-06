@@ -18266,6 +18266,7 @@ const _sfc_main$28 = /* @__PURE__ */ defineComponent({
             key: 2,
             class: normalizeClass({ [unref(ns).em("text", "expand")]: unref(shouldAddSpace) })
           }, [
+            createTextVNode(" === "),
             renderSlot(_ctx.$slots, "default")
           ], 2)) : createCommentVNode("v-if", true)
         ]),

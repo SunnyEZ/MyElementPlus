@@ -1,4 +1,4 @@
-import { defineComponent, computed, openBlock, createBlock, resolveDynamicComponent, mergeProps, unref, withCtx, createElementBlock, Fragment, renderSlot, normalizeClass, createCommentVNode } from 'vue';
+import { defineComponent, computed, openBlock, createBlock, resolveDynamicComponent, mergeProps, unref, withCtx, createElementBlock, Fragment, renderSlot, normalizeClass, createCommentVNode, createTextVNode } from 'vue';
 import { ElIcon } from '../../icon/index.mjs';
 import '../../../hooks/index.mjs';
 import { useButton } from './use-button.mjs';
@@ -69,6 +69,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             key: 2,
             class: normalizeClass({ [unref(ns).em("text", "expand")]: unref(shouldAddSpace) })
           }, [
+            createTextVNode(" === "),
             renderSlot(_ctx.$slots, "default")
           ], 2)) : createCommentVNode("v-if", true)
         ]),

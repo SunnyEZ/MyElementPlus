@@ -18270,6 +18270,7 @@
               key: 2,
               class: vue.normalizeClass({ [vue.unref(ns).em("text", "expand")]: vue.unref(shouldAddSpace) })
             }, [
+              vue.createTextVNode(" === "),
               vue.renderSlot(_ctx.$slots, "default")
             ], 2)) : vue.createCommentVNode("v-if", true)
           ]),
